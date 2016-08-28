@@ -139,6 +139,8 @@ This project is in development but we are more than happy to accept external con
 
 [Semantic Ant](https://github.com/websemantics/semantic-ant), Ant Design inspired theme for Semantic-UI.
 
+[Themeblr](https://github.com/websemantics/themeblr), Flexible boilerplate for building Bootstrap 4 themes.
+
 [Awesome Ant Design](https://github.com/websemantics/awesome-ant-design), a list of resources for Ant Design.
 
 [Bootstrap](https://getbootstrap.com//): the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
