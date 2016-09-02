@@ -17,13 +17,13 @@
                             |░░░░░░░/░░░░|░░░░░░/░░░░░░|       \          \     
 
 
-                      _______ _______  ______ _______  _____    _______ __   _ _______      
-                      |______    |    |_____/ |_____| |_____] _ |_____| | \  |    |   
-                      ______|    |    |    \_ |     | |         |     | |  \_|    |         
+                 _______ __   _ _______      _______ _______  ______ _______  _____
+                 |_____| | \  |    |         |______    |    |_____/ |_____| |_____]
+                 |     | |  \_|    |         ______|    |    |    \_ |     | |         
 
 ```
 
-> [Ant Design](http://ant.design/) inspired theme for [Bootstrap](http://getbootstrap.com//)
+> [Ant Design](http://ant.design/) inspired theme for [Bootstrap 4](http://getbootstrap.com//)
 
 [![Build Status](https://travis-ci.org/websemantics/ant-strap.svg?branch=master)](https://travis-ci.org/websemantics/ant-strap)
 
