@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="{{ site.description }}">
+<meta name="author" content="Adnan M.Sagar, PhD, and Bootstrap contributors">
+
+<title>{{ page.title }}</title>
+
+<!-- Core CSS -->
+{% if site.github %}
+  <link href="{{ site.baseurl }}/dist/css/ant-strap.min.css" rel="stylesheet">
+  {% if page.title == "Flexbox grid system" %}
+    <link href="{{ site.baseurl }}/assets/css/docs-flexbox.min.css" rel="stylesheet">
+  {% endif %}
+{% else %}
+  <link href="{{ site.baseurl }}/dist/css/ant-strap.css" rel="stylesheet">
+{% endif %}
+
+<!-- Documentation extras -->
+<link href="{{ site.baseurl }}/assets/css/docs.min.css" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" />

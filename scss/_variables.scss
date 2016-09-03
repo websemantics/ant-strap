@@ -1,0 +1,10 @@
+// *****************************************************************************
+// Bootstrap variables overrides
+//
+// Copy variables from `"node_modules/bootstrap/scss/_variables.scss` to this
+// file to override default values.
+// *****************************************************************************
+
+@import "../node_modules/bootstrap/scss/variables";
+
+$fa-font-path: "../fonts/";

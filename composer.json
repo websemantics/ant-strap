@@ -1,0 +1,36 @@
+{
+  "name": "websemantics/ant-strap",
+  "description": "An elegant CSS Framework built after Ant Design using Bootstrap 4.",
+  "keywords": [
+    "css",
+    "js",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "http://getbootstrap.com",
+  "authors": [
+    {
+      "name": "Mark Otto",
+      "email": "markdotto@gmail.com"
+    },
+    {
+      "name": "Jacob Thornton",
+      "email": "jacobthornton@gmail.com"
+    },
+    {
+      "name": "Adnan M.Sagar, PhD.",
+      "email": "msagar@gmail.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/websemantics/ant-strap/issues"
+  },
+  "license": "MIT",
+  "replace": {
+    "twitter/bootstrap": "self.version"
+  }
+}

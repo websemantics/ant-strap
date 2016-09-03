@@ -1,0 +1,30 @@
+/*!
+ * Bootstrap Docs (http://getbootstrap.com)
+ * Copyright 2011-2016 The Bootstrap Authors
+ * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2016 Web Semantics, Inc.
+ * Licensed under the Creative Commons Attribution 3.0 Unported License. For
+ * details, see https://creativecommons.org/licenses/by/3.0/.
+ */
+
+// Load variables and mixins
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+// Local docs variables
+// Flat colors: http://www.flatdesigncolors.com/
+// Color calculator: http://razorjam.github.io/sasscolourfunctioncalculator/
+
+// Local docs variables
+$tm-brand: #0c4b79;
+$tm-brand-light: lighten(desaturate(adjust-hue($tm-brand, 0.0130), 0.3554), 9.8039);;
+$tm-star-yellow: #F5CC7A;
+
+// Load docs components
+@import "brand";
+@import "buttons";
+@import "masthead";
+@import "featurettes";
+@import "content";
+@import "footer";
+@import "bragit";

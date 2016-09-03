@@ -1,0 +1,136 @@
+{
+  "name": "ant-strap",
+  "description": "An elegant CSS Framework built after Ant Design using Bootstrap 4.",
+  "version": "1.0.1",
+  "keywords": [
+    "css",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "websemantics/ant-strap.git"
+  },
+  "homepage": "http://websemantics.github.io/ant-strap/",
+  "author": "The Bootstrap Authors",
+  "contributors": [
+    {
+      "name": "Web Semantics, Inc.",
+      "url": "http://websemantics.ca",
+      "email": "info@websemantics.ca"
+    },
+    {
+      "name": "Twitter, Inc.",
+      "url": "http://twitter.com"
+    }
+  ],
+  "config": {
+    "deploy": {
+      "name": "iAyeBot",
+      "email": "iayebot@websemantics.ca",
+      "branch": "master:gh-pages",
+      "message": "Deploy to gh-pages"
+    },
+    "dir": {
+      "src": "./src/",
+      "dist": "./_gh_pages/"
+    }
+  },
+  "scripts": {
+    "change-version": "node ./node_modules/bootstrap/grunt/change-version.js",
+    "eslint": "eslint --config js/.eslintrc.json js/src && node_modules/bootstrap/",
+    "jscs": "jscs --config=js/.jscsrc js/src js/tests/unit docs/assets/js/src grunt Gruntfile.js docs/assets/js/ie-emulation-modes-warning.js docs/assets/js/ie10-viewport-bug-workaround.js",
+    "htmlhint": "htmlhint --config docs/.htmlhintrc $npm_package_config_dir_dist ",
+    "postcss": "postcss --config node_modules/bootstrap/grunt/postcss.js --replace dist/css/*.css",
+    "postcss-docs": "# (uncomment if have docs folder) postcss --config node_modules/bootstrap/grunt/postcss.js --no-map --replace docs/assets/css/docs.min.css && postcss --config node_modules/bootstrap/grunt/postcss.js --no-map --replace docs/examples/**/*.css",
+    "update-shrinkwrap": "npm shrinkwrap --dev && shx mv ./npm-shrinkwrap.json ./node_modules/bootstrap/grunt/npm-shrinkwrap.json",
+    "test": "npm run eslint && npm run jscs && grunt test",
+    "deploy": "[ ${GH_TOKEN} ] && npm run deploy:travis -s || npm run deploy:local -s ",
+    "deploy:local": "repository=$(echo $npm_package_repository_url | sed 's/.*+//') && cd $npm_package_config_dir_dist && git push --force --quiet $repository ${npm_package_config_deploy_branch} > /dev/null 2>&1 ",
+    "deploy:travis": "cd $npm_package_config_dir_dist && git push --force --quiet \"https://${GH_TOKEN}@${GH_REF}\" ${npm_package_config_deploy_branch} > /dev/null 2>&1 ",
+    "predeploy": "rm -rf $npm_package_config_dir_dist && npm run prep-release -s && cd $npm_package_config_dir_dist && git init && git config user.name $npm_package_config_deploy_name && git config user.email $npm_package_config_deploy_email && git add -A . && git commit -am \"$npm_package_config_deploy_message\" ",
+    "rebrand": "node ./node_modules/bootstrap/grunt/change-version.js",
+    "prep-release": "grunt prep-release",
+    "watch": "grunt watch-all",
+    "build": "grunt"
+  },
+  "style": "dist/css/ant-strap.css",
+  "sass": "scss/ant-strap.scss",
+  "main": "./dist/js/npm",
+  "bugs": {
+    "url": "https://github.com/websemantics/ant-strap/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.3",
+    "font-awesome": "^4.6.3",
+    "jquery": "1.9.1 - 3",
+    "tether": "^1.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "babel-eslint": "^6.0.4",
+    "eslint": "^3.0.0",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^5.0.3",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-build-control": "^0.7.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-compress": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.0",
+    "grunt-contrib-qunit": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-exec": "^1.0.0",
+    "grunt-html": "^8.0.1",
+    "grunt-jekyll": "^0.4.2",
+    "grunt-sass": "^1.0.0",
+    "grunt-saucelabs": "^9.0.0",
+    "grunt-scss-lint": "^0.3.8",
+    "grunt-stamp": "^0.3.0",
+    "htmlhint": "^0.9.13",
+    "is-travis": "^1.0.0",
+    "jscs": "^3.0.4",
+    "load-grunt-tasks": "^3.4.0",
+    "postcss-cli": "^2.5.2",
+    "postcss-flexbugs-fixes": "^2.0.0",
+    "shelljs": "^0.7.0",
+    "shx": "^0.1.2",
+    "time-grunt": "^1.2.1"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "dist",
+    "js/*.js",
+    "scss/**/*.scss",
+    "Gruntfile.js",
+    "LICENSE"
+  ],
+  "jspm": {
+    "main": "js/ant-strap",
+    "ignore": [
+      "dist/js/npm"
+    ],
+    "directories": {
+      "lib": "dist"
+    },
+    "shim": {
+      "js/bootstrap": {
+        "deps": [
+          "jquery"
+        ],
+        "exports": "$"
+      }
+    }
+  }
+}

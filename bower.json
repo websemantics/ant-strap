@@ -1,0 +1,33 @@
+{
+  "name": "ant-strap",
+  "description": "An elegant CSS Framework built after Ant Design using Bootstrap 4.",
+  "keywords": [
+    "css",
+    "js",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "http://websemantics.github.io/ant-strap",
+  "license": "MIT",
+  "moduleType": "globals",
+  "main": [
+    "scss/ant-strap.scss",
+    "dist/js/ant-strap.js"
+  ],
+  "ignore": [
+    "/.*",
+    "_config.yml",
+    "composer.json",
+    "docs",
+    "js/tests",
+    "test-infra"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1 - 3",
+    "tether": "^1.1.1"
+  }
+}

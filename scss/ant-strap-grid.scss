@@ -1,0 +1,22 @@
+// Ant Strap Grid only
+//
+// Includes relevant variables and mixins for the regular (non-flexbox) grid
+// system, as well as the generated predefined classes (e.g., `.col-4-sm`).
+
+
+//
+// Variables
+//
+
+@import "variables";
+
+//
+// Grid mixins
+//
+
+@import "../node_modules/bootstrap/scss/mixins/clearfix";
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../node_modules/bootstrap/scss/mixins/grid-framework";
+@import "../node_modules/bootstrap/scss/mixins/grid";
+
+@import "grid";

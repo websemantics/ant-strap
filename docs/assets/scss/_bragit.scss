@@ -1,0 +1,32 @@
+//
+// Bragit guidelines
+// url,  https://github.com/websemantics/bragit
+//
+.bd-masthead {
+  .ui {
+    &.button {
+      color: $gray-lighter;
+      background-color: transparent;
+      box-shadow: 0 0 0 1px  $gray-lighter inset;
+    }
+    &.labeled.button>.label {
+      color: $gray-lighter;
+      background-color: transparent;
+      border-color: $gray-lighter;
+    }
+    &.button:focus,
+    &.button:hover,
+    &.labeled.button>.label:focus,
+    &.labeled.button>.label:hover {
+      color: $tm-brand;
+      background-color: $gray-lighter;
+    }
+  }
+}
+.ui.labeled {
+  .ui.button {
+    .star.icon {
+      color: $tm-star-yellow;
+    }
+  }
+}

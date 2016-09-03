@@ -1,0 +1,14 @@
+//
+// Generic styles
+//
+
+a {
+  color: darken($tm-brand, 15);
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: $tm-brand;
+    text-decoration: underline;
+  }
+}

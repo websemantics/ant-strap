@@ -1,0 +1,33 @@
+script: npm run deploy
+sudo: required
+language: node_js
+git:
+  depth: 10
+node_js:
+- '4'
+- '6'
+before_install:
+- export PATH=$(python -c 'from sys import argv;from collections import OrderedDict
+  as od;print(":".join(od((p,None) for p in argv[1].split(":") if p.startswith("/")).keys()))'
+  "$PATH")
+- rvm install 2.2
+- rvm use 2.2 --fuzzy
+- npm install -g npm@3
+- export TRAVIS_COMMIT_MSG="$(git log --format=%B --no-merges -n 1)"
+- echo "$TRAVIS_COMMIT_MSG" | grep '\[skip validator\]'; export TWBS_DO_VALIDATOR=$?;
+  true
+- echo "$TRAVIS_COMMIT_MSG" | grep '\[skip sauce\]'; export TWBS_DO_SAUCE=$?; true
+- if [ "$TRAVIS_REPO_SLUG" = twbs-savage/bootstrap ]; then export TWBS_DO_VALIDATOR=0;
+  fi
+install:
+- bundle install --deployment --jobs=3
+- cp grunt/npm-shrinkwrap.json ./
+- npm install
+cache:
+  directories:
+  - node_modules
+  - vendor/bundle
+env:
+  global:
+  - GH_REF: github.com/websemantics/ant-strap.git
+  - secure: ZH2P/CSNftxdxVAisR9Zmw9hGaCD+VTCwg6i4/ItGh+DXy7w8Rm5r5gYB00vi/wuwabrPyAcnQo6eANcEODl9EdCDEOlYHj0djxdHZ8Bb5zHP1w7NivyY4W1v6+lm/j8qX2My2kCW3usdTOk5wpoASurPDGR9iU0lQ0rzTsbNt2czzVXI2eFHcm8KcSAEdK2oLgeAo/2Md6GenXK1JZ0qm9e0MYVeESiGQ8GWKYQ3E3+1vG3Y2Sgn0gI25HrqGQOCFhcRZ1FNWdQx5VrYU1GpOMGXLebW9m4TVESmv6fo4YHZGEuYo9eIlREMjBJD1qxPgmwSWmapEFc6oUrjAz8Vw2grQHcRAtlGWV89nSAQL+LrOm2O7Wkm/oYupbv/M/Dhy0rhpa/g7HKyeiQuoD0e3+OeVJdqRqMrMJkyqRF/tTRoQpD6iYIGDuzGeL3UVaZwFttpW9Zgbqeacs8W6JBFEiM1P9uzzcdwGJfKGY5yun85RgadiM+/Yxa8Rsjy02hRi4UwU/CYccWGoeEO1XXngrjwbv6op0sofQPa6qH2Iq/7/nUEQXnPXHnail+2VROSvz98KJfSODyiIA19qZckFJ+WcLTnew4ef+N/LFtCfgassWylVM/644VuPY69jDN8pd5K6HjwkxaEp4s34J/1RxNcZkeqxjDdiMc2DhquSQ=
