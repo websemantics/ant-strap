@@ -72,7 +72,7 @@ module.exports = function (grunt) {
           modules: 'ignore'
         },
         files: {
-          '<%= concat.ant-strap.dest %>' : '<%= concat.ant-strap.dest %>'
+          '<%= concat.ant_strap.dest %>' : '<%= concat.ant_strap.dest %>'
         }
       }
     },
@@ -82,9 +82,9 @@ module.exports = function (grunt) {
         banner: '<%= banner %>\n<%= jqueryCheck %>\n<%= jqueryVersionCheck %>\n+function ($) {\n',
         footer: '\n}(jQuery);'
       },
-      ant-strap: {
+      ant_strap: {
         files: {
-          src: '<%= concat.ant-strap.dest %>'
+          src: '<%= concat.ant_strap.dest %>'
         }
       }
     },
@@ -98,7 +98,7 @@ module.exports = function (grunt) {
         },
         stripBanners: false
       },
-      ant-strap: {
+      ant_strap: {
         src: [
           'js/src/custom.js',
           'node_modules/bootstrap/dist/js/bootstrap.js'
@@ -116,7 +116,7 @@ module.exports = function (grunt) {
         preserveComments: /^!|@preserve|@license|@cc_on/i
       },
       core: {
-        src: '<%= concat.ant-strap.dest %>',
+        src: '<%= concat.ant_strap.dest %>',
         dest: 'dist/js/<%= pkg.name %>.min.js'
       },
       docsJs: {
@@ -150,7 +150,7 @@ module.exports = function (grunt) {
     cssmin: {
       options: {
         // TODO: disable `zeroUnits` optimization once clean-css 3.2 is released
-        //    and then simplify the fix for https://github.com/twbs/ant-strap/issues/14837 accordingly
+        //    and then simplify the fix for https://github.com/twbs/bootstrap/issues/14837 accordingly
         compatibility: 'ie9',
         keepSpecialComments: '*',
         sourceMap: true,
@@ -243,7 +243,7 @@ module.exports = function (grunt) {
 
     watch: {
       src: {
-        files: '<%= concat.ant-strap.src %>',
+        files: '<%= concat.ant_strap.src %>',
         tasks: ['babel:dev']
       },
       sass: {
@@ -297,7 +297,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:websemantics/ant-strap.git',
+          remote: 'git@github.com:websemantics/ant_strap.git',
           branch: 'gh-pages'
         }
       }

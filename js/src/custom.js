@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * Ant Strap (v1.0.1): custom.js
+ * Ant Strap (v1.0.0): custom.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -17,7 +17,7 @@ const Custom = (($) => {
      */
 
     const NAME = 'custom'
-    const VERSION = '1.0.1'
+    const VERSION = '1.0.0'
     const DATA_KEY = 'bs.custom'
     const EVENT_KEY = `.${DATA_KEY}`
     const DATA_API_KEY = '.data-api'
