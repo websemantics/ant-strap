@@ -188,18 +188,17 @@ Love the Github *repository buttons* used and want to use them to showcase your 
 
 ## Resource
 
+[Themeblr](https://websemantics.github.io/themeblr/), A powerful CSS framework boilerplate and Bootstrap 4 themes builder .
+
 [Ant Design](http://ant.design/), An enterprise-class UI design language and React-based implementation.
 
 [Bootstrap 4](http://v4-alpha.getbootstrap.com/), The most popular HTML, CSS, and JS framework in the world for building responsive, mobile-first projects on the web.
 
-[Ant Strap](https://websemantics.github.io/ant-strap/), An elegant CSS Framework built after Ant Design using Bootstrap 4.
+[Semantic Ant](https://github.com/websemantics/semantic-ant), Ant Design inspired theme for [Semantic-UI](http://semantic-ui.com/).
 
 [Bootstrap 4 Cheatsheet](https://hackerthemes.com/bootstrap-cheatsheet/), A quick reference for Bootstrap v4.0.0-alpha.3.
 
 [Awesome Ant Design](https://github.com/websemantics/awesome-ant-design/), A curated list of Ant Design resources and related projects.
-
-[Semantic Ant](https://github.com/websemantics/semantic-ant), Ant Design inspired theme for [Semantic-UI](http://semantic-ui.com/).
-
 
 ## Support
 
