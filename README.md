@@ -28,7 +28,7 @@
 
 [![Build Status](https://travis-ci.org/websemantics/ant-strap.svg?branch=master)](https://travis-ci.org/websemantics/ant-strap)
 
-### [Ant Strap](http://websemantics.github.io/ant-strap)&nbsp;&nbsp;&nbsp;[Getting Started](#getting-started)&nbsp;&nbsp;&nbsp;[Submit Issue](https://github.com/websemantics/ant-strap/issues)
+### [Showcase](http://websemantics.github.io/ant-strap)&nbsp;&nbsp;&nbsp;[Getting Started](#getting-started)&nbsp;&nbsp;&nbsp;[Submit Issue](https://github.com/websemantics/ant-strap/issues)
 
 
 ## Getting Started
