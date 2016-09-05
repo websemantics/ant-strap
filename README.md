@@ -185,7 +185,7 @@ To start development on your local machine following these steps,
 
 ## Screenshot
 
-[![Ant Strap](https://raw.githubusercontent.com/websemantics/ant-strap/master/docs/assets/img/ant-strap.png)](https://websemantics.github.io/ant-strap/)
+[![Ant Strap](https://raw.githubusercontent.com/websemantics/themeblr/master/docs/assets/img/ant-strap.png)](https://websemantics.github.io/ant-strap/)
 
 Love the Github *repository buttons* used and want to use them to showcase your own GitHub repositories? the name is Bragit, [Brag It](http://websemantics.github.io/bragit/).
 
