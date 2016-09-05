@@ -2,10 +2,33 @@
 
 .bd-masthead {
   position: relative;
+  z-index: 3;
   padding: 2rem $grid-gutter-width / 2;
   color: #fff;
-  text-align: center;
-  background-image: linear-gradient(135deg, darken($tm-brand, 20%), $tm-brand, lighten(saturate($tm-brand, 5%), 15%));
+  text-align: left;
+  background-color: #000;
+  background-image: url("../img/ant-strap.png");
+  background-position: 50% 50%;
+  border-bottom: 1px solid #ddd;
+  box-shadow: none;
+
+  @include transition(background 6s cubic-bezier(.680, -.550, .265, 1.4) 0s, opacity 6s cubic-bezier(.680, -.550, .265, 1.4) 0s);
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-size: cover;
+    opacity: .45;
+    @include transition(background 6s cubic-bezier(.680, -.550, .265, 1.4) 0s, opacity 6s cubic-bezier(.680, -.550, .265, 1.4) 0s);
+  }
+
+  .brand-item {
+    padding-bottom: 15px;
+  }
 
   h1 {
     font-weight: 300;
@@ -13,9 +36,7 @@
   }
 
   .lead {
-    margin-right: auto;
     margin-bottom: 2rem;
-    margin-left: auto;
     font-size: 1.25rem;
     color: $gray-lighter;
   }
@@ -25,7 +46,7 @@
   }
 
   @include media-breakpoint-up(sm) {
-    padding-top: 3rem;
+    padding-top: 12rem;
     padding-bottom: 2rem;
 
     .btn {
@@ -38,7 +59,7 @@
   }
 
   @include media-breakpoint-up(md) {
-    padding-bottom: 6rem;
+    padding-bottom: 10rem;
 
     .bd-header {
       margin-bottom: 4rem;

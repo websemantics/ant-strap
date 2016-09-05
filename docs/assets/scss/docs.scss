@@ -7,6 +7,16 @@
  * details, see https://creativecommons.org/licenses/by/3.0/.
  */
 
+
+/*
+
+
+  COMPLETE MESS ...
+
+
+*/
+
+
 // Load variables and mixins
 @import "../../../scss/variables";
 @import "../../../scss/mixins";
@@ -16,15 +26,15 @@
 // Color calculator: http://razorjam.github.io/sasscolourfunctioncalculator/
 
 // Local docs variables
-$tm-brand: #0c4b79;
+$tm-brand: #0ae;
 $tm-brand-light: lighten(desaturate(adjust-hue($tm-brand, 0.0130), 0.3554), 9.8039);;
 $tm-star-yellow: #F5CC7A;
 
 // Load docs components
-@import "brand";
 @import "buttons";
 @import "masthead";
 @import "featurettes";
 @import "content";
 @import "footer";
+@import "nav";
 @import "bragit";

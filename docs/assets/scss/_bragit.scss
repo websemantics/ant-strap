@@ -5,21 +5,21 @@
 .bd-masthead {
   .ui {
     &.button {
-      color: $gray-lighter;
+      color: $tm-brand;
       background-color: transparent;
-      box-shadow: 0 0 0 1px  $gray-lighter inset;
+      box-shadow: 0 0 0 1px  $tm-brand inset;
     }
     &.labeled.button>.label {
-      color: $gray-lighter;
+      color: $tm-brand;
       background-color: transparent;
-      border-color: $gray-lighter;
+      border-color: $tm-brand;
     }
     &.button:focus,
     &.button:hover,
     &.labeled.button>.label:focus,
     &.labeled.button>.label:hover {
-      color: $tm-brand;
-      background-color: $gray-lighter;
+      color: #fff;
+      background-color: $tm-brand;
     }
   }
 }

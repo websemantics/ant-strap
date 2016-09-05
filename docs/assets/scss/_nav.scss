@@ -1,0 +1,10 @@
+.navbar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  font-size: 18px;
+  background: rgba(0, 0, 0, .25);
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+  transition: border .5s cubic-bezier(.455, .03, .515, .955), background .5s cubic-bezier(.455, .03, .515, .955);
+}
