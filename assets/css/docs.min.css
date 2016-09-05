@@ -1,0 +1,295 @@
+/*!
+ * Bootstrap Docs (http://getbootstrap.com)
+ * Copyright 2011-2016 The Bootstrap Authors
+ * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2016 Web Semantics, Inc.
+ * Licensed under the Creative Commons Attribution 3.0 Unported License. For
+ * details, see https://creativecommons.org/licenses/by/3.0/.
+ */
+/*
+
+
+  COMPLETE MESS ...
+
+
+*/
+.btn-bs {
+  font-weight: 500;
+  color: #21bfff;
+  border-color: #21bfff;
+}
+
+.btn-bs:hover, .btn-bs:focus, .btn-bs:active {
+  color: #fff;
+  background-color: #0ae;
+  border-color: #0ae;
+}
+
+.bd-masthead {
+  position: relative;
+  z-index: 3;
+  padding: 2rem 15px;
+  color: #fff;
+  text-align: left;
+  background-color: #000;
+  background-image: url("../img/ant-strap.png");
+  background-position: 50% 50%;
+  border-bottom: 1px solid #ddd;
+  box-shadow: none;
+  transition: background 6s cubic-bezier(0.68, -0.55, 0.265, 1.4) 0s, opacity 6s cubic-bezier(0.68, -0.55, 0.265, 1.4) 0s;
+}
+
+.bd-masthead::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-size: cover;
+  opacity: .45;
+  transition: background 6s cubic-bezier(0.68, -0.55, 0.265, 1.4) 0s, opacity 6s cubic-bezier(0.68, -0.55, 0.265, 1.4) 0s;
+}
+
+.bd-masthead .brand-item {
+  padding-bottom: 15px;
+}
+
+.bd-masthead h1 {
+  font-weight: 300;
+  line-height: 1;
+}
+
+.bd-masthead .lead {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  color: #eceeef;
+}
+
+.bd-masthead .carbonad {
+  margin-bottom: -2rem !important;
+}
+
+@media (min-width: 544px) {
+  .bd-masthead {
+    padding-top: 12rem;
+    padding-bottom: 2rem;
+  }
+  .bd-masthead .btn {
+    width: auto;
+  }
+  .bd-masthead .carbonad {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .bd-masthead {
+    padding-bottom: 10rem;
+  }
+  .bd-masthead .bd-header {
+    margin-bottom: 4rem;
+  }
+  .bd-masthead h1 {
+    font-size: 4rem;
+  }
+  .bd-masthead .lead {
+    font-size: 1.3rem;
+  }
+  .bd-masthead .carbonad {
+    margin-top: 3rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .bd-masthead .lead {
+    width: 85%;
+    font-size: 1.6rem;
+  }
+}
+
+.bd-featurette {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #555;
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+
+.bd-featurette .highlight {
+  padding: 1rem;
+  text-align: left;
+  background-color: #f7f7f9;
+}
+
+.bd-featurette .lead {
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 544px) {
+  .bd-featurette {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .bd-featurette .col-sm-6:first-child {
+    padding-right: 45px;
+  }
+  .bd-featurette .col-sm-6:last-child {
+    padding-left: 45px;
+  }
+}
+
+.bd-featurette-title {
+  margin-bottom: .5rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+}
+
+.half-rule {
+  width: 6rem;
+  margin: 2.5rem auto;
+}
+
+@media (min-width: 544px) {
+  .half-rule {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.bd-featurette h4 {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  font-weight: normal;
+  color: #333;
+}
+
+.bd-featurette-icon {
+  display: block;
+  margin-bottom: 1.25rem;
+  font-size: 10em;
+  color: #21bfff;
+}
+
+@media (min-width: 480px) {
+  .bd-featurette .img-fluid {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .bd-featurette {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .bd-featurette-title {
+    font-size: 2.5rem;
+  }
+  .bd-featurette-title + .lead {
+    font-size: 1.5rem;
+  }
+  .bd-featurette .lead {
+    max-width: 80%;
+  }
+  .bd-featurette .img-fluid {
+    margin-top: 0;
+  }
+}
+
+a {
+  color: #0073a2;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #0ae;
+  text-decoration: underline;
+}
+
+.bd-footer {
+  padding: 4rem 0;
+  margin-top: 4rem;
+  font-size: 85%;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.bd-footer a {
+  font-weight: 500;
+  color: #55595c;
+}
+
+.bd-footer a:hover {
+  color: #0275d8;
+}
+
+.bd-footer p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 544px) {
+  .bd-footer {
+    text-align: left;
+  }
+}
+
+.bd-footer-links {
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.bd-footer-links li {
+  display: inline-block;
+}
+
+.bd-footer-links li + li {
+  margin-left: 1rem;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+  transition: border 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955), background 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.bd-masthead .ui.button {
+  color: #0ae;
+  background-color: transparent;
+  box-shadow: 0 0 0 1px #0ae inset;
+}
+
+.bd-masthead .ui.labeled.button > .label {
+  color: #0ae;
+  background-color: transparent;
+  border-color: #0ae;
+}
+
+.bd-masthead .ui.button:focus, .bd-masthead .ui.button:hover,
+.bd-masthead .ui.labeled.button > .label:focus,
+.bd-masthead .ui.labeled.button > .label:hover {
+  color: #fff;
+  background-color: #0ae;
+}
+
+.ui.labeled .ui.button .star.icon {
+  color: #F5CC7A;
+}
+
+/*# sourceMappingURL=docs.min.css.map */
